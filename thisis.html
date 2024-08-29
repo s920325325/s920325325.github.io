@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碩士論文概要 </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h2 {
+            color: #34495e;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>碩士論文題目Thesis</h1>
+        <!-- 在這裡填寫你的論文題目 -->
+        <p>基於遷移學習為基礎之構音障礙者中文組句</p>
+        <p>Transfer Learning-based Chinese Sentence Composition 
+            for Individuals with Speech Impairment</p>
+            <a href="https://www.canva.com/design/DAGCej3OF28/7soqNHP2bgj-QtbRKqKi5A/view?utm_content=DAGCej3OF28&utm_campaign=designshare&utm_medium=link&utm_source=editor" style="color: blue; text-decoration: none;" target="_blank">
+                <i class="fas fa-book"></i> More about me on Canvas
+            </a>            
+        <h2>問題與解決目標Problems and Solutions</h2>
+        <ul>
+            <li>語音特徵與一般人差異較大，一般的語音辨識系統無法有效辨識構音障礙者的語意</li>
+            <li>構音障礙者發音較吃力，在語音上的蒐集較為困難，要訓練好的模型需要花更多時間</li>
+            <br>
+            <li>為了善用語音辨識的結果，我們運用自然語言處理(NLP)的方式將音節轉成各種語句</li>
+            <li>以N-Gram為基礎之中文構句，以BERT與詞性結構為基礎語句之判斷用來研究如何將音節轉為句子</li>
+            <br>
+            <br>
+            <li>The speech characteristics of individuals with articulation disorders differ significantly from those of the general population, making it difficult for standard speech recognition systems to accurately interpret their speech.</li>
+            <li>People with articulation disorders struggle more with pronunciation, making speech data collection challenging and requiring more time to train an effective model.</li>
+            <br>
+            <li>To make the most of speech recognition results, we use Natural Language Processing (NLP) techniques to convert syllables into various sentences.</li>
+            <li>We study how to transform syllables into sentences by using N-Gram-based Chinese sentence construction and utilizing BERT and part-of-speech structures for sentence evaluation.</li>
+        </ul>
+        <h2>大綱與內容</h2>
+        <!-- 在這裡填寫論文的大綱 -->
+        <p>
+            構音障礙者因發音與溝通上的先天缺陷，難以被一般ASR系統準確辨識。由於蒐集語音資料困難，影響模型的訓練效果。
+        研究團隊提出了使用深度學習方法建構中文語音辨識系統，雖可參考歷史語句，但對於新語句的組合效果有限。利用N-gram輔助構句，則結合詞性結構和BERT修正錯誤語句，但在新增大量語句時，準確度和效率均受限。
+        延續的N-gram模型，我們重建了詞彙雙向關係，並通過Multiprocessing和Multithreading技術，將句子生成的準確度提升至85%。此外，Fine-tuning後的BERT模型透過動態字典和Dask分散式架構，實現了接近80%的準確度和3秒左右的計算時間。
+        </p>
+        <br>
+        <p>
+            People with speech disorders face challenges in being accurately recognized by standard ASR 
+            systems due to inherent pronunciation and communication difficulties. 
+            The difficulty in collecting speech data impacts the effectiveness of model training. 
+            Our research team proposed using deep learning methods to develop a Chinese speech recognition system.
+             While it can reference historical phrases, its performance in generating new sentences is limited. 
+             Using N-gram for sentence construction, combined with part-of-speech structures and BERT for error correction,
+              improves accuracy but is still limited when handling large amounts of new sentences. 
+              Building on the N-gram model, we restructured the vocabulary into bidirectional relationships 
+              and used Multiprocessing and Multithreading techniques to improve sentence generation accuracy to 85%.
+               Additionally, a fine-tuned BERT model, along with a dynamic dictionary and Dask distributed architecture, achieved nearly 80% accuracy and a computation time of around 3 seconds.            
+        </p>
+        
+
+        <h2>關鍵字Keywords</h2>
+        <!-- 在這裡填寫論文中使用的技術或工具 -->
+        <p>Python Flask API, BERT, NLP, Transfer Learning, Fine-tuning</p>
+        <p>MongoDB, DASK, Distributed dataflow</p>
+    </div>
+</body>
+</html>

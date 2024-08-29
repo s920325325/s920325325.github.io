@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Hsu - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .left-column {
+            width: 30%;
+            background-color: #1c3144;
+            color: white;
+            padding: 30px;
+            /* font-size: smaller; */
+        }
+        .right-column {
+            width: 70%;
+            padding: 20px;
+        }
+        .section {
+            padding: 10px 0;
+        }
+        .section:not(:last-child) {
+            border-bottom: 4px solid #211974; /* Adjust color and thickness as needed */
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .education-item {
+            margin-bottom: 20px;
+        }      
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-left: 18px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .project-item {
+            margin-bottom: 10px;
+        }        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <img src="E:\codes\python\mysites\personal_website\portfolio\templates\portfolio\pictures\S__50348060.jpg" alt="Justin Hsu" class="profile-img">
+            <div class="contact-info">
+                <a href="mailto:justin20067@gmail.com" style="color: white; text-decoration: none;">
+                <i class="fas fa-envelope"></i> justin20067@gmail.com</a><br>
+                <br>
+                <a href="https://github.com/s920325325" style="color: white; text-decoration: none;" target="_blank">
+                <i class="fas fa-globe"></i> My github</a>
+                <br>
+                <br>
+                <a href="https://s920325325.github.io/filename.html" style="color: white; text-decoration: none;" target="_blank">
+                    <i class="fas fa-book"></i> about my thisis
+                </a>
+
+            </div>     
+            <br>  
+            <br>     
+            <h2>COMPETENCE</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>NoSQL / RMDBS</li>
+                <li>Docker</li>
+                <li>Linux</li>
+                <!-- <li>Basic Git</li> -->
+            </ul>
+            <h2>LANGUAGE</h2>
+            <ul>
+                <li>Chinese (native)</li>
+                <li>English (intermediate)</li>
+            </ul>
+        </div>
+        <div class="right-column">
+            <h1>JUSTIN HSU</h1>
+            <div class="section">
+                <br>
+                <h2>SUMMARY</h2>
+                <br>
+                <p>&nbsp;&nbsp;Dedicated software engineer with a Master of Science in Computer Science and solid experience in C++, Python, Google Cloud Platform (GCP), SQL, and NoSQL. Skilled in developing algorithms and cloud-based infrastructures.</p>
+                <p>&nbsp;&nbsp;Passionate about problem-solving with a commitment to continuous improvement and learning. Proven track record of collaborating effectively in team settings and delivering robust, high-quality software on time.</p>
+            </div>
+            <div class="section">
+                <h2>EDUCATION</h2>
+                <div class="education-item">
+                    <h3>MS, Computer Science and Information Engineering</h3>
+                    <p>Nation Taipei University, Taipei, Taiwan (2021-2023)</p>
+                    <ul class="education-details">
+                        <li>GPA: 4/4</li>
+                        <li>Master Thesis:<strong> Transfer Learning-based Chinese Sentence Composition for Individuals with Speech Impairment</strong></li>
+                        <li>Advisor: Dr. Yue-Shan Chang</li>
+                        <li>Developed and optimized a data transfer system using Flask API to manage data flow across 8 PCs.</li>
+                        <li>Implemented multiprocessing and parallel computing with DASK, reducing program execution time from an average of 20 seconds to 7 seconds.</li>
+                        <li>Leveraged and fine-tuned the BERT NLP model to enhance user personalization.</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>BS, Computer Science and Information Engineering</h3>
+                    <p>Chung Yuan Christian University, Taoyuan, Taiwan (2016-2020)</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>SIDE PROJECTS</h2>
+                <br>
+                <div class="project-item">
+                    <h3>Flask Web (Python)</h3>
+                    <ul>
+                        <li>Deployed the application on GCP with Docker container.</li>
+                        <li>Implemented RESTful APIs to facilitate data exchange, and utilized Flask forms for data submission to a PostgreSQL database hosted on GCP.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>MongoDB Cluster</h3>
+                    <ul>
+                        <li>Built a MongoDB cluster from scratch using 13 Linux OS systems.</li>
+                        <li>Configured a router and a configuration server with 2 replicas, and set up 3 shards, each with 2 replicas.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Calculator & Number Guessing Game (C++)</h3>
+                    <ul>
+                        <li>Developed a basic calculator using stack data structures.</li>
+                        <li>Created a number guessing game with multiple modes and username identification.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
